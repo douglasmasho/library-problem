@@ -12,9 +12,6 @@ public class Book {
 		this._idNum = newID;
 	}
 	
-	
-	
-	
 	public String GetID() {
 		return _idNum;
 	}
