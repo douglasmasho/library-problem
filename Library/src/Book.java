@@ -6,6 +6,7 @@ public class Book {
 	private Date _borrowedDate;
 	private Date _returnedDate;
 	
+	
 	Book(String newN, String newID){
 		this._name = newN;
 		this._idNum = newID;
