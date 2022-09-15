@@ -1,0 +1,4 @@
+Object Oriented Programming 2
+Computer Organization and Architecture
+Computer networks 2
+Advanced databases

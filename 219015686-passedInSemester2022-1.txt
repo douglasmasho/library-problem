@@ -1,0 +1,4 @@
+Object Oriented Programming 1
+Maths for Computer Science
+Computer networks 1
+Introduction to Database Systems
