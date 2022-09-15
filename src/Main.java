@@ -30,9 +30,17 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-
-
-
+        File f;
+        Scanner scanner = null;
+        try{
+            f = new File("219015686-passedInSemester2022-1.txt");
+            scanner = new Scanner(f);
+            while(scanner.hasNext()){
+                System.out.println(scanner.nextLine());
+            }
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
 
     }
 }
