@@ -23,12 +23,30 @@ public class Zoo {
           pw = new PrintWriter(f);
 
           for(Bird bird: birds){
-              if(bird.GetName().equals(name.toLowerCase())){
+              if(bird.GetName().toLowerCase().equals(name.toLowerCase())){
                   pw.println(bird.GetName() + " " + bird.GetColor());
               }
           }
         }catch(Exception e){
             throw new IOException(e);
+        }finally {
+            pw.close();
+        }
+    }
+
+    public void SaveBlueBirds() throws IOException{
+        File f;
+        PrintWriter pw = null;
+        try{
+           f = new File("bluebirds.txt");
+           pw = new PrintWriter(f);
+           for(Bird bird: birds){
+               if(bird.GetColor().toLowerCase().equals("blue")){
+                   pw.println(bird.GetName() + " " + bird.GetColor());
+               }
+           }
+        }catch(Exception e){
+            throw new IOException("File not found");
         }finally {
             pw.close();
         }

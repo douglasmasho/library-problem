@@ -8,7 +8,7 @@ public class Bird {
     }
 
     public String GetName(){
-        return name.toLowerCase();
+        return name;
     }
 
     public String GetColor(){

@@ -1,2 +1,2 @@
-parrot blue
-parrot red
+Parrot blue
+Parrot red
